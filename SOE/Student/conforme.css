@@ -1,0 +1,108 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: aqua;
+}
+
+.dycilogo {
+    background-color: rgb(26, 26, 136);
+    height: 600px;
+    width: 375px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+.dycilogo img{
+    width: 250px;
+    height: 250px;
+}
+
+.conform {
+    height: 600px;
+    width: 550px;
+    padding-left: 5px;
+    background-color: white;
+    border-bottom-right-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.conform .content-conforme {
+    margin-top: 85px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.conform .content-conforme .title h1{
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: center;
+    font-size: 45px;
+}
+
+.conform .content-conforme .certify p{
+    color: gray;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: center;
+    font-size: 20px;
+    margin-top: -10px;
+}
+
+.conform .content-conforme .system-title h3{
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: center;
+    font-size: 20px;
+}
+
+.conform .content-conforme .p1message p{
+    color: gray;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: center;
+    font-size: 18px;
+    margin-top: 15px;
+}
+
+.conform .content-conforme .p2message p{
+    color: gray;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: center;
+    font-size: 18px;
+    margin-top: 15px;
+}
+
+.conform .content-conforme .signatory {
+    margin-top: 50px;
+    margin-left: -20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.conform .content-conforme .signatory .btnagree button {
+    width: 100px;
+    height: 45px;
+    color: white;   
+    border: solid;
+    background-color: green;
+    border-bottom: green;
+}
+
+.conform .content-conforme .signatory .btnagree {
+    margin-right: 120px;
+}
+
+.conform .content-conforme .signatory .btndecline button {
+    width: 100px;
+    height: 45px;
+    color: white;
+    border: solid;
+    background-color: red;
+    border-bottom: red;
+}
