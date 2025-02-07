@@ -7,8 +7,8 @@ body{
 
 .dycilogo {
     background-color: rgb(26, 26, 136);
-    height: 500px;
-    width: 350px;
+    height: 600px;
+    width: 375px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -17,13 +17,13 @@ body{
 }
 
 .dycilogo img{
-    width: 245px;
-    height: 245px;
+    width: 250px;
+    height: 250px;
 }
 
 .loginform {
-    height: 500px;
-    width: 500px;
+    height: 600px;
+    width: 550px;
     padding-left: 5px;
     background-color: white;
     border-bottom-right-radius: 20px;
@@ -31,13 +31,14 @@ body{
 }
 
 .loginform .header {
-    margin-top: 50px;
+    margin-top: 85px;
 }
 
 .loginform .header h1{
     font-family: Arial, Helvetica, sans-serif;
     display: flex;
     justify-content: center;
+    font-size: 45px;
 }
 
 .loginform .header p{
@@ -45,17 +46,18 @@ body{
     font-family: Arial, Helvetica, sans-serif;
     display: flex;
     justify-content: center;
+    font-size: 20px;
     margin-top: -10px;
 }
 
 .loginform .form {
     align-items: center;
     justify-content: center;
-    margin-left: 50px
+    margin-left: 65px
 }
 
 .loginform .form .username {
-    margin-top: 30px;
+    margin-top: 50px;
 }
 
 .loginform .form .username label {
@@ -66,14 +68,15 @@ body{
 .loginform .form .username input {
     width: 400px;
     height: 35px;
+    border: 1px solid;
     border-radius: 5px;
-    border-color: yellow;
+    border-color: rgb(255, 209, 3);
     margin-top: 5px;
     padding-left: 10px;
 }
 
 .loginform .form .password {
-    margin-top: 40px;
+    margin-top: 50px;
 }
 
 .loginform .form .password label {
@@ -84,8 +87,9 @@ body{
 .loginform .form .password input {
     width: 400px;
     height: 35px;
+    border: 1px solid;
     border-radius: 5px;
-    border-color: yellow;
+    border-color: rgb(255, 209, 3);
     margin-top: 5px;
     padding-left: 10px;
 }

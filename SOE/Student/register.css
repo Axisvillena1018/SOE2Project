@@ -7,8 +7,8 @@ body{
 
 .dycilogo {
     background-color: rgb(26, 26, 136);
-    height: 500px;
-    width: 350px;
+    height: 600px;
+    width: 375px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -17,13 +17,13 @@ body{
 }
 
 .dycilogo img{
-    width: 245px;
-    height: 245px;
+    width: 250px;
+    height: 250px;
 }
 
 .loginform {
-    height: 500px;
-    width: 500px;
+    height: 600px;
+    width: 550px;
     padding-left: 5px;
     background-color: white;
     border-bottom-right-radius: 20px;
@@ -51,7 +51,7 @@ body{
 .loginform .form {
     align-items: center;
     justify-content: center;
-    margin-left: 50px
+    margin-left: 65px
 }
 
 .loginform .form .email {
@@ -65,15 +65,16 @@ body{
 
 .loginform .form .email input {
     width: 400px;
-    height: 25px;
+    height: 35px;
+    border: 1px solid;
     border-radius: 5px;
-    border-color: yellow;
+    border-color: rgb(255, 209, 3);
     margin-top: 2.5px;
     padding-left: 10px;
 }
 
 .loginform .form .firstname {
-    margin-top: 10px;
+    margin-top: 15px;
 }
 
 .loginform .form .firstname label {
@@ -83,15 +84,16 @@ body{
 
 .loginform .form .firstname input {
     width: 400px;
-    height: 25px;
+    height: 35px;
+    border: 1px solid;
     border-radius: 5px;
-    border-color: yellow;
+    border-color: rgb(255, 209, 3);
     margin-top: 2.5px;
     padding-left: 10px;
 }
 
 .loginform .form .lastname {
-    margin-top: 10px;
+    margin-top: 15px;
 }
 
 .loginform .form .lastname label {
@@ -101,15 +103,16 @@ body{
 
 .loginform .form .lastname input {
     width: 400px;
-    height: 25px;
+    height: 35px;
+    border: 1px solid;
     border-radius: 5px;
-    border-color: yellow;
+    border-color: rgb(255, 209, 3);
     margin-top: 2.5px;
     padding-left: 10px;
 }
 
 .loginform .form .sid {
-    margin-top: 10px;
+    margin-top: 15px;
 }
 
 .loginform .form .sid label {
@@ -119,15 +122,16 @@ body{
 
 .loginform .form .sid input {
     width: 400px;
-    height: 25px;
+    height: 35px;
+    border: 1px solid;
     border-radius: 5px;
-    border-color: yellow;
+    border-color: rgb(255, 209, 3);
     margin-top: 2.5px;
     padding-left: 10px;
 }
 
 .loginform .form .username {
-    margin-top: 10px;
+    margin-top: 15px;
 }
 
 .loginform .form .username label {
@@ -137,15 +141,16 @@ body{
 
 .loginform .form .username input {
     width: 400px;
-    height: 25px;
+    height: 35px;
+    border: 1px solid;
     border-radius: 5px;
-    border-color: yellow;
+    border-color: rgb(255, 209, 3);
     margin-top: 2.5px;
     padding-left: 10px;
 }
 
 .loginform .form .password {
-    margin-top: 10px;
+    margin-top: 15px;
 }
 
 .loginform .form .password label {
@@ -155,9 +160,10 @@ body{
 
 .loginform .form .password input {
     width: 400px;
-    height: 25px;
+    height: 35px;
+    border: 1px solid;
     border-radius: 5px;
-    border-color: yellow;
+    border-color: rgb(255, 209, 3);
     margin-top: 2.5px;
     padding-left: 10px;
 }
