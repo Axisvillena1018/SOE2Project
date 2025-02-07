@@ -1,0 +1,56 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="register.css"></link>
+        <script>
+            function goBack()
+            {
+                window.location.href = "login.html";
+            }
+        </script>
+    </head>
+    <body>
+        <div class="dycilogo">
+            <img src="dyci-logo.png"></img>
+        </div>
+        <div class="loginform">
+            <div class="header">
+                <h1>REGISTRATION</h1>
+            </div>
+            <div class="form">
+                <div class="email">
+                    <label>Email: </label><br>
+                    <input type="text"></input>
+                </div>
+                <div class="firstname">
+                    <label>First Name: </label><br>
+                    <input type="text"></input>
+                </div>
+                <div class="lastname">
+                    <label>Lastname: </label><br>
+                    <input type="text"></input>
+                </div>
+                <div class="sid">
+                    <label>Student ID: </label><br>
+                    <input type="text"></input>
+                </div>
+                <div class="username">
+                    <label>Username: </label><br>
+                    <input type="text"></input>
+                </div>
+                <div class="password">
+                    <label>Password: </label> <br>
+                    <input type="password"></input>
+                </div>
+
+                <div class="backorreg">
+                    <div class="btnback">
+                        <button onclick="goBack()">Back</button>
+                    </div>
+                    <div class="btnreg">
+                        <button>Register</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,6 +1,12 @@
 <html>
     <head>
         <link rel="stylesheet" href="login.css"></link>
+        <script>
+            function goReg()
+            {
+                window.location.href = "register.html";
+            }
+        </script>
     </head>
     <body>
         <div class="dycilogo">
@@ -23,7 +29,7 @@
 
                 <div class="RegorSub">
                     <div class="btnreg">
-                        <button>Register</button>
+                        <button onClick="goReg()">Register</button>
                     </div>
                     <div class="btnlogin">
                         <button>Log-in</button>
