@@ -1,0 +1,119 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: aqua;
+}
+
+.dycilogo {
+    background-color: rgb(26, 26, 136);
+    height: 500px;
+    width: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+.dycilogo img{
+    width: 245px;
+    height: 245px;
+}
+
+.loginform {
+    height: 500px;
+    width: 500px;
+    padding-left: 5px;
+    background-color: white;
+    border-bottom-right-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.loginform .header {
+    margin-top: 50px;
+}
+
+.loginform .header h1{
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: center;
+}
+
+.loginform .header p{
+    color: gray;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: center;
+    margin-top: -10px;
+}
+
+.loginform .form {
+    align-items: center;
+    justify-content: center;
+    margin-left: 50px
+}
+
+.loginform .form .username {
+    margin-top: 30px;
+}
+
+.loginform .form .username label {
+    font-family: Arial, Helvetica, sans-serif;
+    color: gray;
+}
+
+.loginform .form .username input {
+    width: 400px;
+    height: 35px;
+    border-radius: 5px;
+    border-color: yellow;
+    margin-top: 5px;
+    padding-left: 10px;
+}
+
+.loginform .form .password {
+    margin-top: 40px;
+}
+
+.loginform .form .password label {
+    font-family: Arial, Helvetica, sans-serif;
+    color: gray;
+}
+
+.loginform .form .password input {
+    width: 400px;
+    height: 35px;
+    border-radius: 5px;
+    border-color: yellow;
+    margin-top: 5px;
+    padding-left: 10px;
+}
+
+.loginform .form .RegorSub {
+    margin-top: 50px;
+    margin-left: -70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.loginform .form .RegorSub .btnreg button {
+    width: 150px;
+    height: 40px;
+    color: white;
+    background-color: rgb(0, 0, 63);
+    border-bottom: rgb(0, 0, 63);
+}
+
+.loginform .form .RegorSub .btnreg {
+    margin-right: 20px;
+}
+
+.loginform .form .RegorSub .btnlogin button {
+    width: 150px;
+    height: 40px;
+    color: white;
+    background-color: rgb(0, 0, 63);
+    border-bottom: rgb(0, 0, 63);
+}
