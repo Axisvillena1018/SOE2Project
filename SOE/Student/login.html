@@ -7,6 +7,20 @@
             {
                 window.location.href = "register.html";
             }
+            function login()
+            {
+                var username = document.getElementById("username").value;
+                var password = document.getElementById("password").value;
+
+                if (username === "Test.00000@dyci.edu.ph" && password === "password")
+                {
+                    window.location.href = "conforme.html";
+                }
+                else
+                {
+                    alert("Invalid Username or Password");
+                }
+            }
         </script>
     </head>
     <body>
@@ -21,11 +35,11 @@
             <div class="form">
                 <div class="username">
                     <label>Username: </label><br>
-                    <input type="text"></input>
+                    <input type="text" id="username" required></input>
                 </div>
                 <div class="password">
                     <label>Password: </label> <br>
-                    <input type="password"></input>
+                    <input type="password" id="password" required></input>
                 </div>
 
                 <div class="RegorSub">
@@ -33,7 +47,7 @@
                         <button onClick="goReg()">Register</button>
                     </div>
                     <div class="btnlogin">
-                        <button>Log-in</button>
+                        <button onClick="login()">Log-in</button>
                     </div>
                 </div>
             </div>
