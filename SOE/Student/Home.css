@@ -19,44 +19,107 @@ body{
 }
 
 .NavBar .Menu {
-    margin-left: 20px;
+    margin-left: 30px;
     display: flex;
 }
 
-.NavBar .Menu .drpchapters .dpchap button{
-    width: 150px;
-    height: 100%;
-    color: white;
+.navBar .Menu .drpchapters{
+    display: flex;
+}
+
+/* Chapters */
+
+.navBar .Menu .drpchapters .btnchap button{
+    margin-left: 10px;
     border: solid;
-    border-radius: 10px;
-    background-color: blue;
-    border-color: blue;
+    background-color: rgb(26, 26, 136);
+    border-color: rgb(26, 26, 136);
+    color: white;
 }
 
-.NavBar .Menu .drpchapters .contchapters {
-    width: 100%;
-    height: 150px;
+.navBar .Menu .drpchapters .dpchap .contchapters{
+    display: none;
     background-color: white;
-    display: flex;
-    justify-content: space-around;
+    border: solid;
+    border-color: blue;
+    border-width: .5px;
+    width: 200px;
+    height: fit-content;
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
 }
 
-.navbar .Menu .drpchapters .contchapters button{
-    width: 250px;
-    height: 100px;
-    margin-top: 30px;
-    margin-inline: 20px;
+.navBar .Menu .drpchapters .dpchap .contchapters button{
+    margin-top: 5px;
+    margin-left: 5px;
+    margin-bottom: 5px;
+    width: 190px;
+    height: 75px;
     color: white;
-    background-color: blue;
+    background-color: rgb(91, 91, 241);
     border: solid;
-    border-color: blue;
+    border-color: rgb(91, 91, 241);
     border-radius: 20px;
 }
 
-/*
-.navbar .Menu .drpchapters:hover .contchapters{
-    display: flex;
+.navBar .Menu .drpchapters .dpchap .btnchap button {
+    width: 200px;
+    height: 100%;
 }
-*/
+
+.navBar .Menu .drpchapters .dpchap button{
+    width: 150px;
+}
+
+.navBar .Menu .drpchapters .dpchap:hover .contchapters{
+    display: block;
+}
+
+/*Dashboard*/
+
+.navBar .Menu .drpchapters .dpdash button{
+    border: solid;
+    background-color: rgb(26, 26, 136);
+    border-color: rgb(26, 26, 136);
+    color: white;
+}
+
+.navBar .Menu .drpchapters .dpdash .contdash{
+    display: none;
+    background-color: white;
+    border: solid;
+    border-color: blue;
+    border-width: .5px;
+    width: 200px;
+    height: fit-content;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.navBar .Menu .drpchapters .dpdash .contdash button{
+    margin-top: 5px;
+    margin-left: 5px;
+    margin-bottom: 5px;
+    width: 190px;
+    height: 75px;
+    color: white;
+    background-color: rgb(91, 91, 241);
+    border: solid;
+    border-color: rgb(91, 91, 241);
+    border-radius: 20px;
+}
+
+.navBar .Menu .drpchapters .dpdash .btndash button {
+    width: 200px;
+    height: 100%;
+}
+
+.navBar .Menu .drpchapters .dpdash button{
+    width: 150px;
+}
+
+.navBar .Menu .drpchapters .dpdash:hover .contdash{
+    display: block;
+}
+
+
