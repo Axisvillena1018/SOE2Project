@@ -1,0 +1,75 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: aqua;
+}
+
+.dycidp{
+    background-color: white;
+    width: 1000px;
+    height: 550px;
+    border-radius: 20px;
+    display: block;
+}
+
+.dycidp .head {
+    background-color: blue;
+    width: 990px;
+    height: 55px;
+    margin-top: 5px;
+    margin-left: 5px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dycidp .head h1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    color: white;
+}
+
+.dycidp .p1{
+    margin-top: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.dycidp .p2{
+    margin-top: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.dycidp .agreement
+{
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.dycidp .agreement .btnagree button{
+    width: 200px;
+    height: 45px;
+    color: white;   
+    border: solid;
+    background-color: green;
+    border-bottom: green;
+    border-radius: 10px;
+}
+
+.dycidp .agreement .btndisagree button{
+    width: 200px;
+    height: 45px;
+    color: white;   
+    border: solid;
+    background-color: red;
+    border-bottom: red;
+    border-radius: 10px;
+}
