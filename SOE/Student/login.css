@@ -121,3 +121,9 @@ body{
     background-color: rgb(0, 0, 63);
     border-bottom: rgb(0, 0, 63);
 }
+
+.loginform .form .RegorSub button:hover{
+    border: solid;
+    background-color: rgb(92, 92, 141);
+    border-color: rgb(92, 92, 141);
+}
