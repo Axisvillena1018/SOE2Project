@@ -148,7 +148,7 @@ body{
 
 .Home-Body .btnhome button{
     margin: 10px;
-    width: 175px;
+    width: 200px;
     height: 50px;
     border: solid;
     border-color: blue;
@@ -157,6 +157,14 @@ body{
     color: white;
 }
 
+.Home-Body .btnhome button:hover{
+    border: solid;
+    border-color: rgb(92, 92, 226);
+    background-color: rgb(92, 92, 226);
+}
+
+/* Home Container */
+
 .Home-body .Home-Container{
     display: flex;
     align-items: center;
@@ -164,17 +172,43 @@ body{
     Margin-top: 25px;   
     width: 1500px;
     height: 600px;
-    background-color: blue;
 }
 
 .Home-Body .Home-Container .Homepage{
     width: 72%;
     height: 100%;
-    background-color: aquamarine;
+    background-color: white;
+    border: solid;
+    border-color: blue;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.Home-Body .Home-Container .Event-Container{
-    width: 25%;
+/* News */
+.Home-Body .Home-Container .News{
+    width: 72%;
     height: 100%;
-    background-color: red;
+    background-color: white;
+    border: solid;
+    border-color: blue;
+    border-radius: 20px;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Events */
+
+.Home-Body .Home-Container .Event-Container{
+    width: 20%;
+    height: 95%;
+    background-color: White;
+    border: solid;
+    border-color: black;
+    border-width: 2px;
+    border-radius: 20px;
+    padding: 10px;
+    margin-left: 15px;
 }
