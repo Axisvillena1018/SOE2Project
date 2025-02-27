@@ -2,26 +2,6 @@
     <head>
         <link rel="stylesheet" href="login.css"></link>
         <title>Login - DYCI Roadmap</title>
-        <script>
-            function goReg()
-            {
-                window.location.href = "register.html";
-            }
-            function login()
-            {
-                var username = document.getElementById("username").value;
-                var password = document.getElementById("password").value;
-
-                if (username === "Test.00000@dyci.edu.ph" && password === "password")
-                {
-                    window.location.href = "conforme.html";
-                }
-                else
-                {
-                    alert("Invalid Username or Password");
-                }
-            }
-        </script>
     </head>
     <body>
         <div class="dycilogo">
@@ -33,24 +13,32 @@
                 <p>Navigating Your Path to Success, One Step at a Time</p>
             </div>
             <div class="form">
-                <div class="username">
-                    <label>Username: </label><br>
-                    <input type="text" id="username" required></input>
-                </div>
-                <div class="password">
-                    <label>Password: </label> <br>
-                    <input type="password" id="password" required></input>
-                </div>
-
-                <div class="RegorSub">
-                    <div class="btnreg">
-                        <button onClick="goReg()">Register</button>
+                <form method="POST" action="login.php">
+                    <div class="username">
+                        <label>Username: </label><br>
+                        <input type="text" id="username" name="username" required></input>
                     </div>
-                    <div class="btnlogin">
-                        <button onClick="login()">Log-in</button>
+                    <div class="password">
+                        <label>Password: </label> <br>
+                        <input type="password" id="password" name="password" required></input>
                     </div>
-                </div>
+    
+                    <div class="RegorSub">
+                        <div class="btnreg">
+                            <button type="button" onClick="goReg()">Register</button>
+                        </div>
+                        <div class="btnlogin">
+                            <button type="submit">Log-in</button>
+                        </div>
+                    </div>
+                </form>
             </div>
         </div>
+        <script>
+            function goReg()
+            {
+                window.location.href = "register.html";
+            }
+        </script>
     </body>
 </html>
