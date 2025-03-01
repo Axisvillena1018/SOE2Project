@@ -19,12 +19,22 @@
             </div>
             <div class="Agreement">
                 <div class="btnagree">
-                    <button>I Agree</button>
+                    <button type="button" onclick="iAgree()">I Agree</button>
                 </div>
                 <div class="btndisagree">
-                    <button>I Disagree</button>
+                    <button type="button" onclick="iDisagree()">I Disagree</button>
                 </div>
             </div>
         </div>
     </body>
+    <script>
+        function iAgree()
+            {
+                window.location.href = "Home.html";
+            }
+            function iDisagree()
+            {
+                window.location.href = "Login.html";
+            }
+    </script>
 </html>

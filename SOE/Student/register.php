@@ -19,7 +19,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST")
 
     if($check_stmt->num_rows > 0)
     {
-        echo "ERROR: Student ID Already Exists";
+        echo "<script>alert('ERROR: Student ID Already Exists'); window.history.back();</script>";
     }
     else
     {
@@ -29,11 +29,11 @@ if($_SERVER["REQUEST_METHOD"] == "POST")
 
         if ($stmt->execute())
         {
-            echo "Registration Successful";
+            echo "<script>alert('Registration Successful!'); window.location.href = 'login.html';</script>";
         }
         else
         {
-            echo "ERROR - Something Wrong with registration " . $stmt->error ;
+            echo "<script>alert('ERROR: Something went wrong with registration. Please try again.'); window.history.back();</script>";
         }
 
         $stmt->close();
