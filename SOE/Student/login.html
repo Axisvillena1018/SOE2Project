@@ -1,11 +1,11 @@
 <html>
     <head>
-        <link rel="stylesheet" href="login.css"></link>
+        <link rel="stylesheet" href="login.css">
         <title>Login - DYCI Roadmap</title>
     </head>
     <body>
         <div class="dycilogo">
-            <img src="dyci-logo.png"></img>
+            <img src="dyci-logo.png">
         </div>
         <div class="loginform">
             <div class="header">
@@ -13,16 +13,16 @@
                 <p>Navigating Your Path to Success, One Step at a Time</p>
             </div>
             <div class="form">
-                <form method="POST" action="login.php">
+                <form id="loginForm">
                     <div class="username">
                         <label>Email: </label><br>
-                        <input type="text" id="username" name="username" required></input>
+                        <input type="text" id="username" name="username" required>
                     </div>
                     <div class="password">
                         <label>Password: </label> <br>
-                        <input type="password" id="password" name="password" required></input>
+                        <input type="password" id="password" name="password" required>
                     </div>
-    
+
                     <div class="RegorSub">
                         <div class="btnreg">
                             <button type="button" onClick="goReg()">Register</button>
@@ -34,11 +34,31 @@
                 </form>
             </div>
         </div>
+
         <script>
-            function goReg()
-            {
+            function goReg() {
                 window.location.href = "register.html";
             }
+
+            document.getElementById("loginForm").addEventListener("submit", function(event) {
+                event.preventDefault();
+
+                let formData = new FormData(this);
+
+                fetch("login.php", {
+                    method: "POST",
+                    body: formData
+                })
+                .then(response => response.json())
+                .then(data => {
+                    if (data.success) {
+                        window.location.href = "conforme.html";
+                    } else {
+                        alert(data.message);
+                    }
+                })
+                .catch(error => console.error("Error:", error));
+            });
         </script>
     </body>
 </html>

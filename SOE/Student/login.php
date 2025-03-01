@@ -1,8 +1,9 @@
 <?php
 
 include 'server-auth.php';
-
 session_start();
+
+header('Content-Type: application/json');
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $username = $_POST['username'];
@@ -20,13 +21,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
         if ($password === $valid_password) {
             $_SESSION['username'] = $valid_username;
-            header("Location: conforme.html");
-            exit();
+            echo json_encode(["success" => true]);
         } else {
-            $error = "Invalid Username or Password";
+            echo json_encode(["success" => false, "message" => "Invalid Username or Password"]);
         }
     } else {
-        $error = "Invalid Username or Password";
+        echo json_encode(["success" => false, "message" => "Invalid Username or Password"]);
     }
 
     $stmt->close();
